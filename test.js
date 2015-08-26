@@ -12,7 +12,7 @@ var LoaderTargetPlugin = webpack.LoaderTargetPlugin;
 
 
 it('should return a function', function() {
-	expect(webpackTargetElectronRenderer({})).to.be.a('function');
+  expect(webpackTargetElectronRenderer({})).to.be.a('function');
 });
 
 it('should apply plugins to compiler', function() {
