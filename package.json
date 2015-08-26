@@ -21,7 +21,11 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "webpack",
+    "target",
+    "electron",
+    "renderer",
+    "electron-renderer"
   ],
   "dependencies": {
     "webpack": "^1.12.0"
