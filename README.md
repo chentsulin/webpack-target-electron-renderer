@@ -59,7 +59,7 @@ options.target = webpackTargetElectronRenderer(options)
 *Required*
 Type: `object`
 
-just like the object that you usally export by `webpack.config.js`.
+just like the object that you used to export by `webpack.config.js`.
 
 
 ## License
