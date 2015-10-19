@@ -27,7 +27,7 @@ module.exports = function(options) {
         'protocol',
         'tray',
         'remote',
-        'web-view',
+        'web-frame',
         'clipboard',
         'crash-reporter',
         'screen',
