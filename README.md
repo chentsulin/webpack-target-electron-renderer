@@ -23,31 +23,21 @@ var webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
 var options = {
   entry: entry,
   output: output,
-  externals: externals,
   module: {
-    loaders: [asyncLoader].concat(loadersByExtension(loaders)).concat(loadersByExtension(stylesheetLoaders)).concat(additionalLoaders)
+    loaders: loaders
   },
   devtool: opts.devtool,
-  debug: opts.debug,
   resolve: {
-    root: appRoot,
-    modulesDirectories: modulesDirectories,
     extensions: extensions,
-    alias: alias,
     packageMains: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main']
-  },
-  plugins: plugins,
-  devServer: {
-    stats: {
-      cached: false,
-      exclude: excludeFromStats
-    }
   }
 }
 
 options.target = webpackTargetElectronRenderer(options)
 
 ```
+
+See also [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate/blob/master/webpack.config.development.js).
 
 
 ## API
