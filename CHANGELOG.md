@@ -1,10 +1,5 @@
-# 0.1.0 (2015/x/x)
-
-#### Features
-
-- **A:**
-- **B:**
+# 0.1.1 (2015/10/20)
 
 #### Bugs Fixed
 
-- **C:**
+- **web-view -> web-frame:** [#1](https://github.com/chentsulin/webpack-target-electron-renderer/pull/1)
