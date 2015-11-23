@@ -1,6 +1,6 @@
 {
   "name": "webpack-target-electron-renderer",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "webpack target function for electron renderer",
   "license": "MIT",
   "repository": "chentsulin/webpack-target-electron-renderer",
