@@ -18,6 +18,7 @@ module.exports = function(options) {
         'auto-updater',
         'browser-window',
         'content-tracing',
+        'desktop-capturer',
         'dialog',
         'electron',
         'global-shortcut',
