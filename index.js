@@ -7,7 +7,7 @@ var NodeTargetPlugin = require('webpack/lib/node/NodeTargetPlugin');
 var ExternalsPlugin = webpack.ExternalsPlugin;
 var LoaderTargetPlugin = webpack.LoaderTargetPlugin;
 
-module.exports = function(options) {
+module.exports = function (options) {
   return function webpackTargetElectronRenderer(compiler) {
     compiler.apply(
       new JsonpTemplatePlugin(options.output),
