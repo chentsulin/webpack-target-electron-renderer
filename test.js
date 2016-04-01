@@ -11,11 +11,11 @@ var ExternalsPlugin = webpack.ExternalsPlugin;
 var LoaderTargetPlugin = webpack.LoaderTargetPlugin;
 
 
-it('should return a function', function() {
+it('should return a function', function () {
   expect(webpackTargetElectronRenderer({})).to.be.a('function');
 });
 
-it('should apply plugins to compiler', function() {
+it('should apply plugins to compiler', function () {
   var _apply = spy();
   var compiler = {
     apply: _apply
