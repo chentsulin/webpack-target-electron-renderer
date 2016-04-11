@@ -55,7 +55,7 @@ just like the object that you used to export by `webpack.config.js`.
 
 There are some built-in webpack [build targets](http://webpack.github.io/docs/configuration.html#target), such as `'web'`, `'node'`, `'electron'`, includes several important modules and global variables resolving rules and templates for chunk and hot-update functionalities.
 
-In electron, there are two different kinds of processes: `main` and `renderer`. `electron-main` is almost the same as node environment and just need to set all of [electron bulit-in modules](https://github.com/webpack/webpack/blob/3d5dc1a7bf8c7e44acb89d3f0c4b357df6a0ac0a/lib/WebpackOptionsApply.js#L122) as externals. However, `electron-renderer` is a little bit different, it's just like a mix environment between browser and node. So we need to provide a target using `JsonpTemplatePlugin`, `FunctionModulePlugin` for browser environment and `NodeTargetPlugin` and `ExternalsPlugin` for commonjs and electron bulit-in modules. 
+In electron, there are two different kinds of processes: `main` and `renderer`. `electron-main` is almost the same as node environment and just need to set all of [electron built-in modules](https://github.com/webpack/webpack/blob/3d5dc1a7bf8c7e44acb89d3f0c4b357df6a0ac0a/lib/WebpackOptionsApply.js#L122) as externals. However, `electron-renderer` is a little bit different, it's just like a mix environment between browser and node. So we need to provide a target using `JsonpTemplatePlugin`, `FunctionModulePlugin` for browser environment and `NodeTargetPlugin` and `ExternalsPlugin` for commonjs and electron bulit-in modules. 
 
 Below is the code about how webpack apply target option:
 
