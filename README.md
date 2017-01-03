@@ -102,7 +102,7 @@ As you can see, we can provide a function as target and then it will go into thi
 That's it! This is the basic 
 mechanism about how this module works.
 
-[Source node](https://github.com/chentsulin/webpack-target-electron-renderer/blob/master/index.js) is only 32 LoC now, so it should not be so hard to understand.
+[Source code](https://github.com/chentsulin/webpack-target-electron-renderer/blob/master/index.js) is only 32 LoC now, so it should not be so hard to understand.
 
 > Note: [webpack#1467](https://github.com/webpack/webpack/pull/1467) and [webpack#2181](https://github.com/webpack/webpack/pull/2181) has been merged and released (>= v1.12.15), so we can use target: 'electron-renderer' on webpack 1.x and 2.x now.
 
