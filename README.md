@@ -104,7 +104,20 @@ mechanism about how this module works.
 
 [Source code](https://github.com/chentsulin/webpack-target-electron-renderer/blob/master/index.js) is only 32 LoC now, so it should not be so hard to understand.
 
-> Note: [webpack#1467](https://github.com/webpack/webpack/pull/1467) and [webpack#2181](https://github.com/webpack/webpack/pull/2181) has been merged and released (>= v1.12.15), so we can use target: 'electron-renderer' on webpack 1.x and 2.x now.
+> Note: [webpack#1467](https://github.com/webpack/webpack/pull/1467) and [webpack#2181](https://github.com/webpack/webpack/pull/2181) has been merged and released (>= v1.12.15), so we can use  on webpack 1.x and 2.x now.
+
+## Migrate to webpack 2 or webpack 1 >= 1.12.15
+
+Added `target: 'electron-renderer'` to your `webpack.config.js` instead of using this module:
+
+```js
+module.exports = {
+  target: 'electron-renderer',
+  // ...others
+};
+```
+
+See the example [here](https://github.com/chentsulin/electron-react-boilerplate/blob/master/webpack.config.development.js#L83-Lundefined).
 
 ## License
 
